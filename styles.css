@@ -1,0 +1,28 @@
+* {
+	font-family: 'Lucida Console', 'Courier New', monospace;
+}
+
+@page {
+	size: A4;
+}
+
+@media print, screen and (min-width: 210mm) {
+	html, body {
+		background-color: rgb(204, 204, 204);
+		width: 210mm;
+		height: 297mm;
+		margin: auto;
+	}
+
+}
+
+main {
+	background-color: white;
+	width: 210mm;
+	height: 297mm;
+	padding: 1em 2em 0 2em;
+}
+
+h1, h2 {
+	text-align: center;
+}
