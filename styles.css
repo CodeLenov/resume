@@ -1,12 +1,13 @@
-* {
-	font-family: 'Lucida Console', 'Courier New', monospace;
-}
-
 @page {
 	size: A4;
 }
 
 @media print, screen and (min-width: 210mm) {
+
+	* {
+		font-family: 'Lucida Console', 'Courier New', monospace;
+	}
+
 	html, body {
 		background-color: rgb(204, 204, 204);
 		width: 210mm;
@@ -14,20 +15,20 @@
 		margin: auto;
 	}
 
-}
+	main {
+		background-color: white;
+		width: 210mm;
+		height: 297mm;
+		padding: 1em 2em 0 2em;
+		font-weight: 14px;
+	}
 
-main {
-	background-color: white;
-	width: 210mm;
-	height: 297mm;
-	padding: 1em 2em 0 2em;
-	font-weight: 14px;
-}
+	h1, h2 {
+		text-align: center;
+	}
 
-h1, h2 {
-	text-align: center;
-}
+	p {
+		font-size: 14px;
+	}
 
-p {
-	font-size: 14px;
 }
